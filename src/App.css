@@ -1,42 +1,94 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+  --red: #d01c28;
+  --gray: #2e2e2e;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body{
+  font-family: "Poppins", system-ui;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.container{
+  max-width: 1000px;
+  margin: 0px auto;
 }
 
-.card {
-  padding: 2em;
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
 }
 
-.read-the-docs {
-  color: #888;
+nav ul{
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+button{
+  all: unset;
+  padding: 6px 16px;
+  height: 32px;
+  color: #fff;
+  font-weight: 500;
+  background: var(--red);
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.content h1{
+  font-weight: 800;
+  font-size: 77px;
+  line-height: 80px ;
+}
+
+.content p {
+  color: var(--gray);
+  font-weight: 400;
+}
+
+.content-btn{
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.content-right{
+  margin-right: -73px;
+  margin-top: 40px;
+}
+.btn1{
+  border: 1.5px solid #d01c28;
+}
+.btn2{
+  background: transparent;
+  color: var(--gray);
+  border: 1.5px solid #2e2e2e;
+}
+
+.shop{
+  color: #2e2e2e;
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.brand-icons{
+  display: flex;
+  gap: 10px;
 }
